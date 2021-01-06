@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_margin="10dp"
+        android:layout_height="60dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/iv_user_image"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_image_24"
+            />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_user_name"
+            android:text="User"
+            android:textColor="@color/Primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_detail"
+            android:text="Detail"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/Secondary"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_baseline_delete_24"
+        app:tint="@color/Primary"
+        android:id="@+id/iv_delete"
+        android:layout_marginEnd="15dp"
+        />
+
+
+
+</LinearLayout>
