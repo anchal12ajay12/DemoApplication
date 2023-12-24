@@ -46,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (doubleBackToExitPressedOnce) {
-            finishAffinity();
-        }
-        this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
-        new Handler().postDelayed(() -> doubleBackToExitPressedOnce = false, 2000);
+        // if (doubleBackToExitPressedOnce) {
+        //     finishAffinity();
+        // }
+        // this.doubleBackToExitPressedOnce = true;
+        // Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+        // new Handler().postDelayed(() -> doubleBackToExitPressedOnce = false, 2000);
     }
 }
